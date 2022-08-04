@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Essas são as medidas fixas */
+
+#centimetro{
+    background-color: blue;
+    width: 5cm;
+    height: 5cm;
+}
+
+#milimetro{
+    background-color: yellow;
+    width: 5mm;
+    height: 5mm;
+}
+
+#inches{
+    background-color: red;
+    width: 5in;
+    height: 5in;
+}
+
+#pixel{
+    background-color: green;
+    width: 5px;
+    height: 5px;
+}
+
+#ponto{
+    background-color: violet;
+    width: 10pt;
+    height: 10pt;
+
+}
+
+#picas{
+    background-color: purple;
+    width: 10pc;
+    height: 10pc;
+}
+
+/* Essas são as medidas relativas */
