@@ -43,3 +43,40 @@ body{
 }
 
 /* Essas são as medidas relativas */
+
+#container{
+    font-size: 20px;
+
+    width: 300px;
+    background-color: red;
+}
+
+#inside{
+
+/*   font-size: 1em; 
+
+     1em vai herdar o tamanho da fonte que é pai desse elemento (no caso, 20 píxels) */
+
+    font-size: 2em; /* 20px*2 = 40px de tamanho de fonte*/
+
+    width: 2em; /* 40px*2 = 80px de largura */
+
+    /*Nesse caso, setar 2em é a mesma cosia que setar 80px  */
+
+    background: blue;
+
+    /* A medida "em" sempre será relativa ao tamanho atual da fonte, apesar de poder ser usada para largura e etc. */
+}
+
+#rem{
+    /*REM é muito semelhante com EM. A diferença é que enquanto EM faz referência ao elemento pai, REM faz referência ao elemento raíz, no caso seria body*/
+
+    font-size: 1rem;
+}
+
+#vwvh{
+    /*VW faz referência à largura total, enquanto VH à altura. */
+
+    background-color: yellow;
+    width: 50vw; /* 50% da largura */
+}
