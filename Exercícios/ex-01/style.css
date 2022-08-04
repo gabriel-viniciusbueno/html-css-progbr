@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+#container{
+    width: 600px;
+    text-align: center;
+    background-image: url("./assets/background-1200x675.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*
+
+    ou usando a shorthand:
+
+    background: url("./assets/background-1200x675.jpg") no repeat fixed cover;
+
+    color, img, repeat, attatchment, position
+
+    */
+}
+/*bem feião memo só pra dale*/
+
+#sorvete01{
+    width: 450px;
+}
