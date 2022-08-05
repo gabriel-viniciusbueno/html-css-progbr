@@ -3,7 +3,11 @@ body{
     background-color: cadetblue;
 }
 
-.bordas{
+div{
+    margin: 10px;
+}
+
+#borda1{
     border-width: 5px; /*É possível colocar vários valores aqui */
 
     border-style: solid; /*Outros estilos: Dotted, Dashed, Solid, None e Hidden */
@@ -16,4 +20,27 @@ body{
     /* assim como Background, Border possui uma shorthand:
         border: 5px solid black;
     */
+}
+
+#borda2{
+    border-width: 10px 5px 10px 5px;
+    border-style: dashed;
+    border-color: green;
+}
+
+#borda3{
+    width:150px;
+    height: 150px;
+    background-color: yellow;
+    border-width: 5px;
+    border-style: dashed;
+    border-radius: 50%;
+}
+
+#borda4{
+    padding: 20px;
+    /*border-width: 5px 10px 5px 10px;
+    border-style: dotted;
+    border-color:aqua blue blueviolet;*/
+    border: 5px dotted blueviolet;
 }
