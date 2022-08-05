@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+}
+
+.bordas{
+    border-width: 5px; /*É possível colocar vários valores aqui */
+
+    border-style: solid; /*Outros estilos: Dotted, Dashed, Solid, None e Hidden */
+
+    border-color: black; /*É possível colocar várias cores em uma borda */
+
+    border-radius: 5px;
+    /*border-radius: 50%;   Podemos utilizar várias unidades de medida para border-radius. Inclusive, mesmo se a borda for invisível, o objeto ficará arredondado */
+
+    /* assim como Background, Border possui uma shorthand:
+        border: 5px solid black;
+    */
+}
