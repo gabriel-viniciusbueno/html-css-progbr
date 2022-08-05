@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: lightslategray;
+}
+
+#square{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+
+    border: 10px solid red;
+    padding: 15px;
+
+    /* Quando alteramos a borda e o padding de um elemento, ele se distorce e acaba ocupando um espaço não planejado.
+    Para isso existe o comando Box-sizing: borderbox;*/
+
+}
+
+#square2{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+
+}
+
+#square3{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+
+    border: 10px solid black;
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    /* Assim, o quadrado continua ocupando apenas os 150px que definimos */
+}
