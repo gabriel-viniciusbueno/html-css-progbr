@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Customizadas</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--É assim que se faz para usar fontes externas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <!--Pegamos esses links no Google Fonts e utilizamos no CSS-->
+    
+    <style>
+        /* Aparentemente @font-face funciona apenas no CSS interno, já que não surtiu efeito no style.css */
+        @font-face {
+            font-family: blueberry;
+            src: url(./fonts/Blueberry-Days.otf);
+}
+        @font-face {
+            font-family: docktrin;
+            src: url(./fonts/docktrin.ttf);
+        }
+
+h2{
+    font-family: 'blueberry', sans-serif;
+}
+
+h3{
+    font-family: 'docktrin', sans-serif;
+}
+    </style>
+
+</head>
+<body>
+
+    <h1>Título Lorem</h1>
+
+    <h2>Título com Fonte Interna</h2>
+
+    <h3>Título com Fonte Interna 2</h3>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum natus deleniti alias modi mollitia perspiciatis molestiae vitae, velit officiis! Quis earum inventore sequi eius cumque quia minima. Provident, architecto voluptatum.</p>
+    
+</body>
+</html>

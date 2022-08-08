@@ -1,0 +1,15 @@
+body{
+    background-color: lightyellow;
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/* Para utilizarmos fontes baixadas internamente, devemos utilizar @font-face*/
