@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightyellow;
+}
+
+p{
+    color: red;
+   /* text-align: right; --> Muda o alinhamento do texto */
+
+   text-align: justify; /* Muda o alinhamento das linhas */
+
+    text-transform: capitalize; /* Transforma o texto. Podemos usar Uppercase, Lowercase ou Capitalize (todsa as primeiras letras em maiúsculo) */
+
+    text-indent: 30px; /* Vai definir o espaço do parágrafo */
+
+    text-decoration: line-through underline overline; /* Decora o texto com linhas. Também é possível usar "none" para tirar a decoração de texto*/
+    letter-spacing: 15px; /* Define o espaçamento entre as linhas (por padrão é 0) */
+
+    line-height: 3; /* Define a altura da linha. Podemos usar valores como 3 (3x o tamanho da fonte) ou 300% (também 3x o tamanho da fonte)*/
+    
+    word-spacing: 5px; /* Define o espaçamento entre as palavras */
+
+    text-shadow: 1px 1px 3px black; /* Recebe 4 valores: O primeiro valor é deslocamento para direito; O segundo é o deslocamento para baixo; O terceiro é o desfoque e o quarto é a cor */
+}
