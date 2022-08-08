@@ -1,0 +1,35 @@
+body{
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links{
+    text-decoration: none;
+    font-weight: bold; 
+    font-size: 30px;
+    color: black;
+    background: yellow;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Além das mudanças comuns que podemos fazer em um link, também é possível modificar "ações" */
+
+/* Esses modificadores herdam os comportamentos do link */
+
+.links:hover{  /* <-- :hover vai modificar a aparência do link quando passamos o mouse por cima dele */
+
+    background-color: black;
+    color: yellow;
+    transition: 0.5s;
+}
+
+.links:active{ /* <-- :active vai modificar a aparência do link quando clicamos */
+
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    transition: 0s;
+}
+
+/* .links:visited é outra possibilidade*/
