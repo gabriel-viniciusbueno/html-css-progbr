@@ -1,0 +1,12 @@
+body{
+    font-family: times, "Comic Sans MS", sans-serif; /* Se o navegador falhar em encontrar a fonte, ele usa o backup*/
+
+    font-style: italic; /* Muda o estilo da fonta para itálico */
+
+    font-size: 25px; /* Define o tamanho da fonte. Podemos usar todas as medidas de tamanho anteriores */
+
+    font-weight: bold; /* Define a "grossura" da fonte (no caso está em negrito). Também pode usar valores de 100 a 900 dependendo da fonte */
+
+    font-variant: small-caps; /*Faz com que todas as letras fiquem "maiúsculas", mas as letras que já estavam uppercase ficam maiores também */  
+}
+
