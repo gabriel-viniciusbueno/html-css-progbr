@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+
+#card{
+    width: 400px;
+    height: 200px;
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    background-image: url('../assets/backgorund.png');
+    background-size: cover;
+    margin: auto;
+}
+
+h1{
+    padding: 10px;
+}
+
+ul{
+    font-size: 20px;
+    
+}
+
+#insta{
+    list-style-image: url('../assets/Insta.png');
+}
+
+#tt{
+    list-style-image: url('../assets/twitter.png');
+}
+
+#yt{
+    list-style-image: url('../assets/youtube.png');
+}
+
