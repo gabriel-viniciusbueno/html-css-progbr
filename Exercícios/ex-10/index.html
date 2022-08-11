@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display</title>
 </head>
 <body>
-    <p>O fenomeno senhor dos aneis me quebrou hoje</p>
-    <p>faço amanha :)</p>    
+
+    <!--O display é uma caractrística que muda o comportamento dos elementos. Existem alguns tipos de display, entre eles: None, Block, Inline e Inline-block-->
+
+    <div>
+        <div>Div normal</div>
+        <div>Outra div com uma <div>div dentro</div></div>
+    </div>
+
+    <div>
+        <p>Parágrafo normal</p>
+        <p>Outro parágrafo normal</p>
+        <!--O parágrafo é display block, logo ele vai do início até o fim da página.-->
+    </div>
+
+    <p>Parágrafo com <span>span no meio</span> e o fim do parágrafo</p>
+    <!--Span é display inline, então ele vai se manter na mesma linha que outros elementos-->
+
+    <p style="background-color: cyan;">Parágrafo com <div>div no meio</div> e o fim do parágrafo</p>
+    <!--Não é possível colocar um elemento com display block dentro do parágrafo, pois ele quebrará o fluxo e não será funcional-->
+
+    <p>Parágrafo com <img src="./logo.png" alt="attack on titan logo" style="width: 250px"> img no meio</p>
+
+       <!--Características dos displays:
+    1- Diferente de display inline, o display block pode ter seu tamanho definida;
+
+    2- O display inline-block é como um misto entre os dois, ele mantém a característica de se manter na mesma linha e também permite que seu tamanho seja definido;
+
+    3- O display none basicamente exclui um elemento, como se ele nunca tivesse sido colocado ali.
+        -->
 </body>
 </html>
