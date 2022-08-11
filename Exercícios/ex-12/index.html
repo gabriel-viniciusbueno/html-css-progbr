@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Horizontal</title>
+
+    <style rel="text/css">
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+        }
+
+        #square{
+            width: 50px;
+            height: 50px;
+            background-color: lawngreen;
+
+            /* Temos algumas opções de propriedades para centralizar um objeto horizontalmente, como por exemplo margin: auto */
+
+            margin: auto;
+            /*Isso funciona muito bem com divs*/
+        }
+        
+        img{
+            width: 300px;
+            margin: auto;
+            /*Nesse caso, margin: auto não irá funcionar pois a imagem não é um display block. */
+        }
+
+        #imagem{
+            text-align: center;
+            /*Essa é uma maneira de centralizar a imagem que exige que ela esteja dentro de um container de display block*/ 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="square"></div>
+
+    <div id="imagem"><img src="./logo.png" alt="attack on titan logo"></div>
+    
+</body>
+</html>
