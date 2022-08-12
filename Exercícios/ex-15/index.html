@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - fixed</title>
+
+    <style>
+
+        .square{
+            width: 100px;
+            height: 100px;
+        }
+
+        .r{
+            background-color: red;
+        }
+
+        .b{
+            /* Aparentemente, Fixed é muito parecido com Absolute. A diferença é que fixed deixa o elemento com um posicionamento referente à viewport */
+            position: fixed;
+            bottom: 0px;
+
+            background-color: blue;
+        }
+
+        .g{
+            background-color: green;
+        }
+
+        .container{
+            width: 500px;
+            height: 4000px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="r square"></div>
+        <div class="b square"></div>
+        <div class="g square"></div>
+    </div>
+    
+</body>
+</html>
