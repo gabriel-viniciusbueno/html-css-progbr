@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - Absolute</title>
+
+    <style>
+
+        .square{
+            width: 100px;
+            height: 100px;
+        }
+
+        .r{
+            background-color: red;
+        }
+
+        .b{
+            /* Quando um elemento possui Position: Absolute, a sua posição inicial não afeta mais outros elementos */
+            position: absolute;
+
+            right: 0px;
+            bottom: 0px; /* Já que o elemento não é relativo ao posicionamento inicial, o que acontece é que o elemento fica com distância de 0px do elemento pai (desde que NÃO tenha posicionamento padrão). */
+
+            background-color: blue;
+        }
+
+        .g{
+            background-color: green;
+        }
+
+        .container{
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+
+            /* É necessário que o elemento pai de b-square tenha position: relative (diferente do padrão) para que o elemento azul consigo colar embaixo dele usando Position: Absolute */
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="r square"></div>
+        <div class="b square"></div>
+        <div class="g square"></div>
+    </div>
+    
+</body>
+</html>
