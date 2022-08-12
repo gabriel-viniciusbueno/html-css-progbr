@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - Static e Relative</title>
+
+    <style>
+
+        .container{
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        .square{
+            width: 100px;
+            height: 100px;
+        }
+
+        .r{
+            /* O Position padrão é o Static. Ele faz com que todo elemento se encaixe em baixo de outro (se for display block) ou do lado (se for inline ou inline-block) */
+            position: static;
+            background-color: red;
+        }
+
+        .b{
+            /* O Position Relative será relativo ao posicionamento padrão. Nos possibilita usar outras propriedades, como Left. */
+            position: relative;
+            left: 400px;
+
+            top: 200px; /*O posicionamento relativo é sempre em relação ao posicionamento inicial. Então para colar ele embaixo seria: 400px(container) - 100px(r-square) - 100px (b-square) = 200px */
+
+            background-color: blue;
+
+
+            /* A diferença dessas propriedades como Left para Margin é que elas não alteram a posição de outros elementos, elas simplesmente "passam por cima" */
+        }
+
+        .g{
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- O ponto negativo de Position: Relative é que ele sempre será relativo ao próprio elemento, o que pode tornar a estrutura do site muito frágil se usado de maneira errada. -->
+    <div class="container">
+        <div class="r square"></div>
+        <div class="b square"></div>
+        <div class="g square"></div>
+    </div>
+    
+</body>
+</html>
