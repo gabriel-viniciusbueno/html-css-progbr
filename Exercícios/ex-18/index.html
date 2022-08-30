@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+
+        body{
+            background-color: beige;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            float: left;
+            margin-right: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .c1{
+            background-color: cadetblue;
+            line-height: 200px; /* Com esse método, conseguimos centralizar o texto verticalmente, porém a desvantagem é que precisamos saber o valor exato de px, e isso acaba não sendo prático*/
+        }
+
+        .c2{
+            background-color: crimson;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            /* Dessa maneira, fica bem melhor centralizar um elemento */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="c1">
+            Gabriel Bueno  
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="c2">
+            Gabriel Bueno  
+        </div>
+    </div>
+    
+</body>
+</html>
