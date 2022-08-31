@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:powderblue;
+        }
+
+        header{
+            /* Um dos jeitos de trabalhar responsividade é colocarmos nossas medidas em função do tamanho do pai, no caso com % */
+            margin: auto;
+            margin-bottom: 0;
+            position: relative;
+            width: 90%;
+            height: 100px;
+            background-color:slategray;
+        }
+
+        .content{
+            background-color: slateblue;
+            position: absolute;
+            text-align: center;
+            width: 90%;
+            height: 70%;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+        }
+
+        span{
+            color: white;
+            font-size: 2em;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            
+            transform: translate(-50%, -50%);
+        }
+
+        .corpo{
+            background-color:turquoise;
+            margin: auto;
+            margin-top: 0;
+            width: 90%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="content">
+            <span>eae</span>
+        </div>
+
+    </header>
+
+    <div class="corpo">
+        <h1>Aqui iria todo o conteúdo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam similique odio nobis deleniti eaque et itaque maiores labore sed voluptates debitis ad quibusdam ea perferendis voluptatum alias, quisquam amet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cum reiciendis alias odio, tempora accusamus nobis praesentium, earum illo sunt omnis modi distinctio rem placeat fuga fugiat. Vel, quae autem?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora corrupti reiciendis nam iure mollitia nobis doloremque vel alias illum, provident maiores, animi sapiente consequatur impedit, fugit et officia esse? Mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officiis architecto quae possimus repellendus. Labore repudiandae error ut debitis id corrupti modi facere? Quia modi hic nihil eius aliquam ipsa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, pariatur quasi mollitia rerum deleniti voluptatem culpa dolor laudantium reiciendis aliquid iure neque debitis maiores asperiores numquam doloribus, officiis deserunt quis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam animi omnis nobis voluptatibus aliquid consequuntur laboriosam iure amet, aliquam id perferendis asperiores, harum saepe quae culpa? Eveniet quasi soluta voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis omnis at facere iusto mollitia maiores. Voluptate, vitae aliquam? Harum blanditiis numquam odit facere, dolorem id voluptate sint doloremque molestiae debitis?</p>
+    </div>
+    
+</body>
+</html>
